@@ -15,7 +15,7 @@ public class MainController {
   public String showForm(Model model) {
     log.info("In showForm()");
     User user = new User();
-    model.addAttribute(user);
+    model.addAttribute("user", user);
     log.info("empty user: " + user);
 
     return "register_form";

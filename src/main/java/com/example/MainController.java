@@ -16,6 +16,7 @@ public class MainController {
     log.info("In showForm()");
     User user = new User();
     model.addAttribute(user);
+    log.info("empty user: " + user);
     return "register_form";
   }
 
